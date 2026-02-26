@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity:1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option">
+                        <img src="/assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="/assets/backward_icon.png">
+                    <img src="/assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge hide">Explore Premium</button>
+                    <button class="badge-2">
+                        <i class="fa-solid fa-circle-arrow-down" style="margin-right: 2px;"></i>
+                        Install App
+                    </button>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <div class="information">
+                <button class="badge-1">All</button>
+                <button class="badge-3">Music</button>
+                <button class="badge-3">Podcasts</button>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card" data-song="songs/song1.mp3">
+                    <img src="/assets/card1img.jpeg" class="card-image">
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Trending Now Near You</h2>
+            <div class="cards-container">
+                <div class="card" data-song="songs/song2.mp3">
+                    <img src="/assets/card2img.jpeg" class="card-image">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card" data-song="songs/song1.mp3">
+                    <img src="/assets/card3img.jpeg" class="card-image">
+                    <p class="card-title">Mere Pass Tum Ho</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card" data-song="songs/song4.mp3">
+                    <img src="/assets/card4img.jpeg" class="card-image">
+                    <p class="card-title">Top 50 - Songs</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Featured and Charts</h2>
+            <div class="cards-container">
+                <div class="card" data-song="songs/song5.mp3">
+                    <img src="/assets/card5img.jpeg" class="card-image">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                <div class="card" data-song="songs/song6.mp3">
+                    <img src="/assets/card6img.jpeg" class="card-image">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <div class="album">
+                <img src="/Homework  assets/album_picture.jpeg">
+                <p class="card-title" style="position:relative; left:25px; padding-bottom:1rem;">Daylight</p>
+                <p class="card-info" style="position:relative; top:14px; right:50px;">David Kushner</p>
+                <img src="/Homework  assets/album_icon1.png" class="album-icon">
+                <img src="/Homework  assets/album_icon2.png" class="album-icon" style="height: 2rem;">
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="/assets/player_icon1.png" class="player-control-icon">
+                    <img src="/assets/player_icon2.png" class="player-control-icon">
+                    <!-- <img src="/assets/player_icon3.png" class="player-control-icon play-btn" style="opacity: 1; height:2rem;"> -->
+                     <i class="fa-solid fa-play player-control-icon play-btn"></i>
+                    <img src="/assets/player_icon4.png" class="player-control-icon">
+                    <img src="/assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="current-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="control">
+                <div class="control-icon">
+                    <img src="/Homework  assets/controls_icon1.png" class="control-icons" style="height: 2rem;">
+                    <img src="/Homework  assets/controls_icon2.png" class="control-icons" style="height: 2rem;">
+                    <img src="/Homework  assets/controls_icon3.png" class="control-icons" style="height: 1.4rem;">
+                    <img src="/Homework  assets/controls_icon4.png" class="control-icons" style="height: 1.3rem;">
+                    <img src="/Homework  assets/controls_icon5.png" class="control-icons" style="height: 2.5rem;">
+                    <input type="range" min="0" max="100" class="control-progress" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Audio Player -->
+    <audio id="audio-player" src=""></audio>
+   <script>
+    const audioPlayer = document.getElementById("audio-player");
+    const songCards = document.querySelectorAll(".card");
+    const playBtn = document.querySelector(".play-btn");
+    const progressBar = document.querySelector(".progress-bar");
+    const volumeBar = document.querySelector(".control-progress");
+
+    let currentSong = "";
+
+    // 🎵 Card click → play song
+    songCards.forEach(card => {
+        card.addEventListener("click", () => {
+            const songSrc = card.getAttribute("data-song");
+
+            if (currentSong !== songSrc) {
+                currentSong = songSrc;
+                audioPlayer.src = songSrc;
+                audioPlayer.play();
+            }
+        });
+    });
+
+    // ▶️ Play / Pause button
+    playBtn.addEventListener("click", () => {
+       if (!audioPlayer.src) return;
+
+if (audioPlayer.paused) {
+    audioPlayer.play();
+
+    // ▶️ → ⏸
+    playBtn.classList.remove("fa-play");
+    playBtn.classList.add("fa-pause");
+
+} else {
+    audioPlayer.pause();
+
+    // ⏸ → ▶️
+    playBtn.classList.remove("fa-pause");
+    playBtn.classList.add("fa-play");
+}
+    });
+
+    // ⏱ Progress bar update
+    audioPlayer.addEventListener("timeupdate", () => {
+        const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+        progressBar.value = progress || 0;
+    });
+
+    // 🎯 Seek (move progress manually)
+    progressBar.addEventListener("input", () => {
+        const time = (progressBar.value / 100) * audioPlayer.duration;
+        audioPlayer.currentTime = time;
+    });
+
+    // 🔊 Volume control
+    volumeBar.addEventListener("input", () => {
+        audioPlayer.volume = volumeBar.value / 100;
+    });
+</script>
+
+</body>
+
+</html>
